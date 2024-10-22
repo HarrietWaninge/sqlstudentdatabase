@@ -2,8 +2,6 @@
 
 pg_dump -cC --inserts -U freecodecamp students > students.sql
 #cp students.sql sqlstudentsproject
-sudo apt-get install rsync
-y
 rsync -a --exclude='.*' ./ ./sqlstudentsproject/
 
 now=$(date)
